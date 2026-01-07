@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile Card | Tailwind CSS</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex items-center justify-center min-h-screen">
+    <!-- Profile Card -->
+    <div class="bg-white p-5 rounded-xl shadow-md max-w-sm w-full text-center 
+    transition duration-200 hover:shadow-2xl">
+    
+    <!-- Profile Image -->
+    <img 
+    src="/Profile Card/bg.jpg" alt="Profile Image"
+    class="w-24 h-24 rounded-full mx-auto mb-4"/>
+
+    <!-- Name -->
+    <h2 class="text-xl font-bold text-gray-800">
+        Mohammad Ajaz
+    </h2>
+
+    <!-- Profession -->
+    <p class="text-md text-black-600">
+        Full Stack AI Developer
+    </p>
+
+    <!-- Bio -->
+    <p class="text-sm text-gray-600 mt-3">
+        Passionate about building modern, responsive web interfaces using 
+        Tailwind CSS and React.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-center space-x-4 mt-5">
+        <a href="#"class="px-4 py-2 bg-blue-500 text-white rounded-lg text-smhover:bg-blue-600 transition">
+            LinkedIn
+        </a>
+
+        <a href="#" class="px-4 py-2 bg-gray-800 text-white rounded-lg text-smhover:bg-gray-900 transition">
+            GitHub
+        </a>
+    </div>
+</div>
+</body>
+</html>
