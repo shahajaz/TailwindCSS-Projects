@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page | Tailwind CSS</title>
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Theme -->
+    <script>
+        tailwind.config ={
+            theme:{
+                extend:{
+                    colors:{
+                        cosmic: '#ff7a18',
+                        navy: '#00BFFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    
+    <!-- ================= NAVBAR ================= -->
+    <nav class="w-full border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-navy">
+                Tailwind CSS
+            </div>
+            
+            <!-- Nav Links -->
+            <ul class="hidden md:flex space-x-10 font-medium">
+                <li class="relative group">
+                    <a href="#" class="pb-1">Home</a>
+                    <span class="absolute left-0 bottom-0 w-0 h-[2.5px] bg-gradient-to-r from-navy to-cosmic transition-all group-hover:w-full"></span>
+                </li>
+
+                <li class="relative group">
+                    <a href="#" class="pb-1">About</a>
+                    <span class="absolute left-0 bottom-0 w-0 h-[2.5px] bg-gradient-to-r from-navy to-cosmic transition-all group-hover:w-full"></span>
+                </li>
+                
+                <li class="relative group">
+                    <a href="#" class="pb-1">Services</a>
+                    <span class="absolute left-0 bottom-0 w-0 h-[2.5px] bg-gradient-to-r from-navy to-cosmic transition-all group-hover:w-full"></span>
+                </li>
+                
+                <li class="relative group">
+                    <a href="#" class="pb-1">Contact</a>
+                    <span class="absolute left-0 bottom-0 w-0 h-[2.5px] bg-gradient-to-r from-navy to-cosmic transition-all group-hover:w-full"></span>
+                </li>
+            </ul>
+            
+            <!-- Get Started Button -->
+            <a href="#"class="relative inline-block p-[2.5px] rounded-lg bg-gradient-to-r from-cosmic to-navy">
+                <span class="block px-6 py-2 bg-white rounded-lg font-semibold text-cosmic hover:bg-gray-50 transition hover:scale-101">
+                    Get Started
+                </span>
+            </a>
+
+        </div>
+    </nav>
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div>
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                Build Modern Websites <br /> with <span class="text-cosmic">Tailwind CSS</span>
+            </h1>
+        
+            <p class="mt-6 text-gray-600 text-lg">
+                Learn how to design fast, responsive, and professional user interfaces
+                using Tailwind CSS through real-world projects.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-8 flex space-x-4"></div>
+
+            <!-- Primary Button -->
+            <a href="#"class="relative inline-block p-[2px] rounded-lg bg-gradient-to-r from-cosmic to-navy">
+                <span class="block px-8 py-3 bg-white rounded-lg font-semibold text-cosmic hover:bg-gray-50 transition">
+                    Start Learning
+                </span>
+            </a>
+
+            <!-- Secondary Button -->
+            <a href="#"class="relative inline-block p-[2px] rounded-lg bg-gradient-to-r from-navy to-cosmic">
+                <span class="block px-8 py-3 bg-white rounded-lg font-semibold text-navy hover:bg-gray-50 transition">
+                    View Projects
+                </span>
+            </a>
+        </div>
+        
+        <!-- Right Image -->
+        <div class="flex justify-center">
+            <img src="https://illustrations.popsy.co/white/web-design.svg" alt="Hero Illustration"
+            class="w-full max-w-md">
+        </div>
+    </section>
+
+</body>
+</html>
+
