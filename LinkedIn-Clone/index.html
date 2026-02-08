@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedIn Clone</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" type="" href="./src/output.css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-white fixed w-full top-0 z-50 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-14">
+
+      <!-- Left -->
+      <div class="flex items-center space-x-3">
+        <i class="fa-brands fa-linkedin text-blue-600 text-3xl"></i>
+
+        <div class="hidden md:flex items-center bg-gray-100 px-3 py-1 rounded-md">
+          <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
+          <input type="text" placeholder="Search"
+            class="bg-transparent outline-none px-2 text-sm w-56">
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8 text-gray-600">
+
+        <div class="nav-item">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </div>
+
+        <div class="nav-item relative">
+          <i class="fa-solid fa-user-group"></i>
+          <span>My Network</span>
+          <span class="badge">1</span>
+        </div>
+
+        <div class="nav-item">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Jobs</span>
+        </div>
+
+        <div class="nav-item relative">
+          <i class="fa-solid fa-comment-dots"></i>
+          <span>Messaging</span>
+          <span class="badge">25</span>
+        </div>
+
+        <div class="nav-item relative">
+          <i class="fa-solid fa-bell"></i>
+          <span>Notifications</span>
+          <span class="badge">25</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="https://i.pravatar.cc/30" class="rounded-full">
+          <span>Me</span>
+        </div>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="md:hidden">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <div class="flex flex-col p-4 space-y-4">
+      <span><i class="fa-solid fa-house mr-2"></i>Home</span>
+      <span><i class="fa-solid fa-user-group mr-2"></i>My Network</span>
+      <span><i class="fa-solid fa-briefcase mr-2"></i>Jobs</span>
+      <span><i class="fa-solid fa-comment-dots mr-2"></i>Messaging</span>
+      <span><i class="fa-solid fa-bell mr-2"></i>Notifications</span>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HOME SECTION ================= -->
+<main class="pt-20 max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+
+  <!-- Left Sidebar -->
+  <aside class="bg-white rounded-lg shadow p-4 hidden md:block">
+    <img src="https://i.pravatar.cc/100" class="rounded-full mx-auto">
+    <h3 class="text-center font-semibold mt-2">Ajaz Mohammad</h3>
+    <p class="text-center text-sm text-gray-500">Full Stack Developer</p>
+    <hr class="my-3">
+    <p class="text-sm">Profile Views <span class="float-right text-blue-600">123</span></p>
+    <p class="text-sm">Post Impressions <span class="float-right text-blue-600">456</span></p>
+  </aside>
+
+  <!-- Feed -->
+  <section class="md:col-span-2 space-y-4">
+
+    <!-- Create Post -->
+    <div class="bg-white rounded-lg shadow p-4">
+      <div class="flex items-center space-x-3">
+        <img src="https://i.pravatar.cc/40" class="rounded-full">
+        <input type="text" placeholder="Start a post"
+          class="w-full bg-gray-100 rounded-full px-4 py-2 outline-none">
+      </div>
+      <div class="flex justify-between mt-4 text-gray-500 text-sm">
+        <span><i class="fa-solid fa-image text-blue-500"></i> Media</span>
+        <span><i class="fa-solid fa-calendar text-yellow-500"></i> Event</span>
+        <span><i class="fa-solid fa-newspaper text-orange-500"></i> Article</span>
+      </div>
+    </div>
+
+    <!-- Post Card -->
+    <div class="bg-white rounded-lg shadow p-4">
+      <div class="flex items-center space-x-3">
+        <img src="https://i.pravatar.cc/40?img=3" class="rounded-full">
+        <div>
+          <h4 class="font-semibold">Tech Guy 360</h4>
+          <p class="text-xs text-gray-500">Software Engineer</p>
+        </div>
+      </div>
+
+      <p class="mt-3 text-sm">
+        Building a complete LinkedIn clone using HTML & Tailwind CSS 🚀
+      </p>
+
+      <div class="flex justify-between mt-4 text-gray-500 text-sm">
+        <span><i class="fa-regular fa-thumbs-up"></i> Like</span>
+        <span><i class="fa-regular fa-comment"></i> Comment</span>
+        <span><i class="fa-solid fa-share"></i> Share</span>
+        <span><i class="fa-regular fa-paper-plane"></i> Send</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Right Sidebar -->
+  <aside class="bg-white rounded-lg shadow p-4 hidden md:block">
+    <h3 class="font-semibold mb-2">LinkedIn News</h3>
+    <ul class="text-sm text-gray-600 space-y-2">
+      <li>• AI is changing software jobs</li>
+      <li>• Web dev demand rising</li>
+      <li>• Tailwind CSS popularity grows</li>
+    </ul>
+  </aside>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="mt-25 bg-white py-6 border-t">
+  <div class=" mx-auto  text-center text-sm text-gray-500 space-y-2">
+    <div class="flex flex-wrap justify-center">
+      <a href="#" class="gap-2">About</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy & Terms</a>
+      <a href="#">Advertising</a>
+      <a href="#">Careers</a>
+    </div>
+    <p>LinkedIn Clone © 2026 | Built with ❤️ using Tailwind CSS</p>
+  </div>
+</footer>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
