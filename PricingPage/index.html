@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pricing Page - Tailwind CSS | TechGuy 360</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-black">
+    
+    <section class="text-center py-12">
+        <h1 class="text-4xl font-bold text-white">Choose Your Plan</h1>
+        <p class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm mt-2 inline-block">
+            Simple pricing. No hidden charges.
+        </p>
+    </section>
+    
+    <!-- Pricing Cards -->
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Basic Plan -->
+            <div class="bg-white rounded-lg shadow-md p-8 text-center hover:scale-105 transition">
+                <h2 class="text-xl font-semibold">Basic</h2>
+                <p class="text-gray-500 mt-2">For beginners</p>
+                
+                <div class="my-6">
+                    <span class="text-4xl font-bold">₹0</span>
+                    <span class="text-gray-500">/month</span>
+                </div>
+                
+                <ul class="space-y-3 text-gray-600">
+                    <li>✔ 1 Project</li>
+                    <li>✔ Basic Support</li>
+                    <li>✔ Community Access</li>
+                </ul>
+                
+                <button class="mt-8 w-full bg-orange-500 text-white py-3 rounded-full hover:bg-orange-400">
+                    Get Started
+                </button>
+            </div>
+            
+            <!-- Pro Plan (Highlighted) -->
+            <div class="bg-orange-900 rounded-lg shadow-xl p-8 text-center border-2 border-orange-500 hover:scale-105 transition">
+                <span class="bg-orange-500 text-white px-4 py-1 rounded-full text-sm">
+                    Most Popular
+            </span>
+            
+            <h2 class="text-white text-xl font-semibold mt-4">Pro</h2>
+            <p class="text-gray-300 mt-2">For professionals</p>
+            
+            <div class="my-6">
+                <span class="text-white text-4xl font-bold">₹999</span>
+                <span class="text-gray-300">/month</span>
+            </div>
+            
+            <ul class="space-y-3 text-gray-400">
+                <li>✔ Unlimited Projects</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Advanced Analytics</li>
+            </ul>
+            <button class="mt-8 w-full bg-orange-500 text-white py-3 rounded-full hover:bg-orange-400">
+                Buy Now
+            </button>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="bg-white rounded-lg shadow-md p-8 text-center hover:scale-105 transition">
+            <h2 class="text-xl font-semibold">Premium</h2>
+            <p class="text-gray-500 mt-2">For enterprises</p>
+            
+            <div class="my-6">
+                <span class="text-4xl font-bold">₹1999</span>
+                <span class="text-gray-500">/month</span>
+            </div>
+            
+            <ul class="space-y-3 text-gray-600">
+                <li>✔ Everything in Pro</li>
+                <li>✔ Dedicated Manager</li>
+                <li>✔ 24/7 Support</li>
+            </ul>
+            <button class="mt-8 w-full bg-orange-500 text-white py-3 rounded-full hover:bg-orange-400">
+                Contact Sales
+            </button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
