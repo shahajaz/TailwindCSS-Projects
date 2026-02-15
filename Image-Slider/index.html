@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider - Tailwind CSS | TechGuy 360</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen">
+    
+    <div class="relative w-[800px] h-[400px] overflow-hidden rounded-lg shadow-2xl group border-2 border-orange-700">
+        
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+            <img src="/Image-Slider/img/img1.jfif" class="w-full flex-shrink-0 object-cover">
+            <img src="/Image-Slider/img/img2.avif" class="w-full flex-shrink-0 object-cover">
+            <img src="/Image-Slider/img/img3.jfif" class="w-full flex-shrink-0 object-cover">
+            <img src="/Image-Slider/img/img4.jfif" class="w-full flex-shrink-0 object-cover">
+        </div>
+
+        <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition cursor-pointer">
+            ❮
+        </button>
+    
+        <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition cursor-pointer">
+            ❯
+        </button>
+
+        <div id="dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 cursor-pointer"></div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
